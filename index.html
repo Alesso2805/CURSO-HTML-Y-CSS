@@ -2,10 +2,78 @@
 <html lang="en">
 <head>
   <title>MI PRIMERA WEB</title> <!--nombre de pagina que aparecera en el navegador-->
+  <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+  </style>
 </head>
 <body>
+  <table style="width: 500px;">
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Manzana</td>
+        <td>2 dolares</td>
+      </tr>
+      <tr>
+        <td>Piñita</td>
+        <td>4 dolares</td>
+      </tr>
+      <tr>
+        <td>Pc muy caro porque es bonito</td>
+        <td>1500 dolares</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <td></td>
+      <td>TOTAL: 1506 dolares</td>
+    </tfoot>
+  </table>
+  <!--LISTA NO ORDENADA-->
+  <ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+  </ul>
+  <!--LISTA ORDENADA-->
+  <ol>
+    <li value="50">Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+    <li>
+      <ol>
+        <li style="list-style-type: lower-roman;">sub elemento 1</li>
+        <li style="list-style-type:lower-roman;">sub elemento 2</li>
+        <li style="list-style-type:lower-roman;">sub elemento 3</li>
+      </ol>
+    </li>
+  </ol>
+
+
+  <form action="/formulario" method="POST">
+    <label for="nombre">Nombre</label>
+    <input value="chanchito" type="text" id="nombre" name="nombre" placeholder="Nombre" />
+    <br> <br>
+    <label for="apellido">Apellido</label>
+    <input value="feliz" type="text" id="apellido" name="apellido" placeholder="Apellido" />
+    <br> <br>
+    <label for="comentario">Comentario</label> <br>
+    <textarea rows="10" cols="50" id="comentario" placeholder="Ingrese comentario" name="comentario">este es un valor por defecto</textarea>
+    <br>
+    <button type="button"> <img width="100" height="120" src="img/beli.jpg"/>Tipo boton</button>
+    <button type="reset">Tipo reset</button>
+    <button type="submit">Tipo submit</button>
+  </form>
   <h1>Mi primer heading</h1>
-  <h2>Mi segundo heading</h2>
+  <h2> Mi segundo heading</h2>
   <h3>Mi tercer heading</h3>
   <h4>Mi cuarto heading</h4>
   <h5>Mi quinto heading</h5>
@@ -16,7 +84,9 @@
   <h2>CHANCHO FELIPE</h2>
   <p>
     ESTE TEXTO ES <span style="color:blueviolet">MUCHO MAS LARGO</span> Y ES PARA 
-    LA ETIQUETA DE SPAN!
+    <br> <br> <br> LA ETIQUETA DE SPAN! <!-- br sirve para hacer un espacio abajo el texto puesto despues de esa etiqueta, mientras mas br ponga, mas espacios hacia abajo habran--> 
   </p>  <!--SPAN sirve para elegir de manera silenciosa una parte del texto escrito en un parrafo, asi pudiendole hacer cambios, de texto, color, etc-->
+  <a target="_blank" href="https://www.google.com"> Ir a google </a> <!-- esto sirve para poner un hipervinculo... "a=anchor"--> <!-- target= "_blank" sirve para abrir un hipervinculo pero en otra pestaña-->
+  <img src="img/beli.jpg" width="100" height="120"/> <!-- img sirve para poner una imagen-->
 </body>
 </html>

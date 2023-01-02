@@ -1,0 +1,54 @@
+#titulo {         /* # es para seleccionar ID */
+    color: tomato;
+}
+
+p.texto {      /* . es para seleccionar clases */
+    color: slateblue;
+}
+
+p.especial {   /* la "p" antes del punto solo va cuando quieres seleccionar una clase que contenga el texto despues del punto */
+    color: mediumseagreen;
+}
+
+div p {
+    color:aquamarine;
+}
+
+div h2, div h3 {  /* selector para cambiar una etiqueta en especifico */
+    color:brown;
+}
+
+* {  /* selector universal, pero si ya hay un selector definido antes, este selector no cambia dicha etiqueta */
+    font-size: 24px;
+    color:black;
+}
+
+/*
+.color {
+    color: #ff0000;     colores de convencion hexagesimal -----------  #rojo rojo, verde verde, azul azul
+} 
+
+.color {
+    color: rgb(0, 255, 255);              (rojo, verde, azul)  color menos intenso = 0 color mas intenso = 255 
+}
+*/
+
+.color {
+    /* border: 5px black dotted; */                      /* primero va el grosor, despues el color, y al final el estilo del borde */
+    /*
+    dotted
+    dashed
+    solid
+    double
+    grove
+    ridge
+    inset
+    outset
+    none
+    hidden
+    */
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 2em;    /* tipos de medida---- px, cm, mm, in, pt, pc, em */
+}
