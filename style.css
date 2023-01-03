@@ -50,5 +50,135 @@ div h2, div h3 {  /* selector para cambiar una etiqueta en especifico */
     border-style: solid;
     border-color: blue;
     border-radius: 5px;
-    border-width: 2em;    /* tipos de medida---- px, cm, mm, in, pt, pc, em */
+    border-width: 2rem;    /* tipos de medida---- px, cm, mm, in, pt, pc, em, rem */    
+}
+
+#fondo {
+    background-color: rgba(255,0,0);  /* tambien se pueden usar valores hexagesimales o en modo rgb, tambien se puede aplicar opacidad al backgroun añadiendo una A al rgb, y esta opacidad solo puede ser entre 0 y 1 */
+    /* opacity: 0.3; */
+    height: 200px;
+    background-image: url('img/fondo1.png');
+    background: #f00 url('img/fondo1.png') repeat-y center top / 100px 100px;
+}
+
+.margen {
+    background-color:chocolate;
+    margin: 15px; /* top, right, bottom, left */
+    padding: 30px 15px 5px;
+    border: solid 1px black;
+    height: 100px;
+    width: 50px;
+    overflow: scroll; /* visible, hidden, scroll */
+    outline: 1px solid red;
+}
+
+.text {
+    font-family: 'Roboto' , sans-serif;
+    text-align: justify;
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px blue; /*sombra hacia la derecha, sombra hacia abajo */
+}
+
+/* el orden de los estados de link siempre son como se muestran abajo */
+
+a:link { /* color del texto del link cuando lo ves por primera vez */
+    color:blueviolet;
+}
+
+a:visited { /* color del texto del link cuando ya lo has visitado antes */
+    color:grey;
+}
+
+a:hover { /* color de texto del link cuando el cursor esta encima del link */
+    color:yellow;
+}
+
+a:active { /* color del texto del link cuando estas clickeando el link */
+    color: red;
+}
+
+ul {
+    background-color: cyan;
+    list-style-type: georgian;
+    /* padding-left: 0px; */
+    /* list-style-position: inside; */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: solid 1px #eee;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+span {
+    display: block;
+    /* display: none; */ /*hace que no se muestre el texto de la etiqueat marcada */
+    /* visibility: hidden; */
+    max-width: 300px;
+    background-color: red;
+}
+
+.inline { 
+    display: inline; /* esto permite convertir el ancho de un div en el ancho de un span */
+}
+
+#position {
+    position: sticky;
+    left: 20px;
+    top: 25px;
+}
+
+.left {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.right {
+    float: right;
+}
+
+.container {
+    height: 200px;
+}
+
+.column {
+    border: solid 0px #ddd;
+    border-radius: 5px;
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%;
+}
+
+.inline-block {
+    display: inline-block; 
+    height: 55px;
+    background-color: red;
+}
+
+.center{
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
 }
